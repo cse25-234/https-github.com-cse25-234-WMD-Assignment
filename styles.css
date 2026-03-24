@@ -19,6 +19,17 @@ header {
     font-weight: bold;
     color: #0A3D62;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
 
 nav a {
     margin: 0 15px;
@@ -33,6 +44,10 @@ nav a:hover {
 icons {
     font-size: 18px;
 }
+ body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+ }
 
 
 .hero {
@@ -48,6 +63,7 @@ icons {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
     
 .left border {
     position: absolute;
