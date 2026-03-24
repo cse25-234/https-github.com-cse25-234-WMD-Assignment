@@ -55,7 +55,7 @@ icons {
     top: 20%;
     width: 8px;
     height: 60%;
-    background: #1ABC9C;
+    background: #1a1dbc;
     border-radius: 5px;   
 }
 .hero h1 {
@@ -78,7 +78,7 @@ icons {
     border: none;
 }
 .apply-btn {
-    background: #27AE60;
+    background: #2773ae;
     color: white;
 }
 
