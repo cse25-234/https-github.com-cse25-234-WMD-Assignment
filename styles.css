@@ -34,7 +34,7 @@ icons {
     font-size: 18px;
 }
 
-/* HERO */
+
 .hero {
     height: calc(100vh - 120px);
     background: #0A3D62;
@@ -56,7 +56,7 @@ icons {
     margin-bottom: 25px;
 }
 
-/* BUTTONS */
+
 .buttons button {
     margin: 10px;
     padding: 12px 25px;
@@ -70,14 +70,13 @@ icons {
     color: white;
 }
 
-/* Secondary button */
+
 .portal-btn {
     background: white;
     color: #0A3D62;
     border: 2px solid #0A3D62;
 }
 
-/* CARDS */
 .cards {
     display: flex;
     gap: 20px;
@@ -100,7 +99,7 @@ icons {
     font-weight: bold;
 }
 
-/* FOOTER */
+
 footer {
     text-align: center;
     padding: 10px;
