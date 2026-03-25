@@ -47,6 +47,10 @@ icons {
  body {
     margin: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    background-image: url ("images/What is Personal Finance_Learn Money.jpg");
+    background-size: cover;
+    backgorund-repeat: no-repeat
+    background-position: center
  }
 
 
