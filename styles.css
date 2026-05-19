@@ -34,7 +34,7 @@ html, body{
 /* ================= HEADER ================= */
 
 #header{
-    background:lightblue;
+    background:black;
     padding:15px 40px;
 
     display:flex;
@@ -376,7 +376,7 @@ button:hover{
 /* ================= FOOTER ================= */
 
 #content_footer{
-    background:#2e2e2e;
+    background:black;
     color:white;
 
     padding:30px;
