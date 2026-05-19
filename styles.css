@@ -17,113 +17,122 @@ html, body {
 }
 
 /* ================= HEADER & NAV ================= */
-#header {
+/* ===== MAIN STRUCTURE ===== */
+#main, #header, #logo, #logo_text, #menubar,
+#content_header, #site_content, #banner,
+#content, #content_footer {
     width: 100%;
-    background: white;
 }
 
-#logo {
-    text-align: center;
+/* ===== MENU ===== */
+#menubar {
+    background: #0d6efd;
 }
 
-#logo img {
-    max-height: 80px;
-}
-
-/* NAVBAR */
 #menu {
+    list-style: none;
     display: flex;
     justify-content: center;
-    list-style: none;
 }
 
 #menu li {
-    margin: 0 15px;
+    padding: 15px 20px;
 }
 
-#menu a {
+#menu li a {
+    color: white;
     text-decoration: none;
-    color: black;
     font-weight: bold;
 }
 
-#menu a:hover {
-    color: blue;
+#menu li.selected {
+    background: #084298;
 }
 
-/* ================= HERO / BANNER ================= */
-#banner img,
-.hero img {
-    width: 100%;
-    display: block;
-}
-
-/* ================= CONTENT ================= */
+/* ===== CONTENT ===== */
 #content {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-}
-
-/* ================= GRID (ABOUT PAGE) ================= */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-}
-
-.grid section {
     padding: 20px;
-    background: #d9e6f2;
-}
-
-/* ================= CARDS (INDEX + APPLICATIONS) ================= */
-.cards {
-    display: flex;
-    width: 100%;
-}
-
-.card {
-    flex: 1;
-    margin: 10px;
-    padding: 15px;
-    background: #d9e6f2;
     text-align: center;
 }
 
-.card img {
-    width: 100%;
-    display: block;
+/* HEADINGS */
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 10px 0;
 }
 
-.card button {
+/* ===== TABLE FIX (NO GAPS) ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    vertical-align: top;
+    padding: 10px;
+}
+
+/* REMOVE EMPTY COLUMN SPACE */
+th:empty {
+    display: none;
+}
+
+/* ===== CARD STYLE (USED IN ALL PAGES) ===== */
+.curved {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* ===== IMAGES (REMOVE GAP UNDER IMAGES) ===== */
+img {
+    display: block;
+    width: 100%;
+}
+
+/* ===== FORM (PORTAL PAGE) ===== */
+form {
+    margin-top: 20px;
+}
+
+input {
+    width: 60%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    padding: 8px 15px;
     margin-top: 10px;
-    padding: 10px 20px;
-    background: blue;
-    color: white;
     border: none;
+    background: #0d6efd;
+    color: white;
     cursor: pointer;
 }
 
-/* ================= FOOTER ================= */
+button:hover {
+    background: #084298;
+}
+
+/* ===== FOOTER ===== */
 #content_footer {
-    width: 100%;
-    background: #222;
+    background: black;
     color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 #content_footer table {
     width: 100%;
-    text-align: center;
 }
 
 #content_footer img {
     width: 30px;
-    margin: 5px;
+    display: inline-block;
 }
 
-/* ================= FIX EXTRA SPACE ================= */
-section {
+/* ===== REMOVE EXTRA LIST SPACE ===== */
+ul {
     margin: 0;
     padding: 0;
 }
