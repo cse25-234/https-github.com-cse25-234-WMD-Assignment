@@ -1,59 +1,62 @@
-/* REMOVE ALL DEFAULT SPACE */
-* {
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* MAKE PAGE FULL HEIGHT */
+/* GLOBAL */
 html, body {
-    height: 100%;
     width: 100%;
+    height: 100%;
     font-family: Arial, sans-serif;
 }
 
-/* HEADER */
+/* NAVBAR (USED ON ALL PAGES) */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
     width: 100%;
+    background: white;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
 }
 
 nav a {
-    margin-left: 20px;
     text-decoration: none;
     color: black;
 }
 
-/* HERO (FULL WIDTH, NO GAP) */
+/* HERO / TOP SECTION */
 .hero {
     width: 100%;
-    height: 400px;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: white;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-
-    padding: 0 20px;
 }
 
-/* BUTTON */
-button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    background: #1e90ff;
-    color: white;
-    cursor: pointer;
+.hero img {
+    width: 100%;
+    display: block;
 }
 
-/* CARDS */
+/* GRID CONTENT (ABOUT PAGE) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.grid article {
+    padding: 20px;
+    background: #d9e6f2;
+}
+
+/* CARDS (INDEX PAGE) */
 .cards {
     display: flex;
     width: 100%;
@@ -61,18 +64,23 @@ button {
 
 .cards article {
     flex: 1;
-    padding: 30px;
+    padding: 20px;
     background: #d9e6f2;
     text-align: center;
 }
 
-/* ANNOUNCEMENTS */
-.announcements {
-    padding: 20px;
+/* IMAGE SECTION */
+.image-section img {
     width: 100%;
+    display: block;
 }
 
-/* FOOTER */
+/* ANNOUNCEMENTS (INDEX PAGE) */
+.announcements {
+    padding: 20px;
+}
+
+/* FOOTER (ALL PAGES) */
 footer {
     display: flex;
     width: 100%;
@@ -83,4 +91,9 @@ footer {
 footer section {
     flex: 1;
     padding: 20px;
+}
+
+footer img {
+    width: 30px;
+    margin-right: 10px;
 }
