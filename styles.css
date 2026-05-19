@@ -4,101 +4,126 @@
     box-sizing: border-box;
 }
 
-/* GLOBAL */
+
 html, body {
     width: 100%;
-    height: 100%;
     overflow-x: hidden;
     font-family: Arial, sans-serif;
 }
 
+/* REMOVE BOOTSTRAP EXTRA SPACE */
 .container-fluid {
     padding: 0 !important;
 }
 
-/* NAVBAR (USED ON ALL PAGES) */
-header {
+/* ================= HEADER & NAV ================= */
+#header {
     width: 100%;
     background: white;
-    padding: 15px 0;
 }
 
-nav ul {
+#logo {
+    text-align: center;
+}
+
+#logo img {
+    max-height: 80px;
+}
+
+/* NAVBAR */
+#menu {
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
-nav ul li {
+#menu li {
     margin: 0 15px;
 }
 
-nav a {
+#menu a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
 }
 
-/* HERO / TOP SECTION */
-.hero {
-    width: 100%;
-    text-align: center;
+#menu a:hover {
+    color: blue;
 }
 
+/* ================= HERO / BANNER ================= */
+#banner img,
 .hero img {
     width: 100%;
     display: block;
 }
 
-/* GRID CONTENT (ABOUT PAGE) */
+/* ================= CONTENT ================= */
+#content {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ================= GRID (ABOUT PAGE) ================= */
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
 }
 
-.grid article {
+.grid section {
     padding: 20px;
     background: #d9e6f2;
 }
 
-/* CARDS (INDEX PAGE) */
+/* ================= CARDS (INDEX + APPLICATIONS) ================= */
 .cards {
     display: flex;
     width: 100%;
 }
 
-.cards article {
+.card {
     flex: 1;
-    padding: 20px;
+    margin: 10px;
+    padding: 15px;
     background: #d9e6f2;
     text-align: center;
 }
 
-/* IMAGE SECTION */
-.image-section img {
+.card img {
     width: 100%;
     display: block;
 }
 
-/* ANNOUNCEMENTS (INDEX PAGE) */
-.announcements {
-    padding: 20px;
+.card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-/* FOOTER (ALL PAGES) */
-footer {
-    display: flex;
+/* ================= FOOTER ================= */
+#content_footer {
     width: 100%;
     background: #222;
     color: white;
 }
 
-footer section {
-    flex: 1;
-    padding: 20px;
+#content_footer table {
+    width: 100%;
+    text-align: center;
 }
 
-footer img {
+#content_footer img {
     width: 30px;
-    margin-right: 10px;
+    margin: 5px;
+}
+
+/* ================= FIX EXTRA SPACE ================= */
+section {
+    margin: 0;
+    padding: 0;
 }
