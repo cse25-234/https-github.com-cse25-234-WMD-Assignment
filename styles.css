@@ -99,12 +99,16 @@ html, body{
     color:black;
 }
 
-/* ================= CONTENT ================= */
+/* ================= CONTENT GRID ================= */
 
 #content{
     width:95%;
     margin:20px auto;
+}
 
+/* MAIN GRID */
+
+.grid{
     display:grid;
 
     grid-template-columns:1fr 1fr;
@@ -119,26 +123,28 @@ html, body{
 
 /* ================= BOXES ================= */
 
-.curved{
+.card{
     background:#d9e8ff;
+
     border-radius:20px;
+
     padding:25px;
 
-    box-shadow:0 3px 8px rgba(0,0,0,0.2);
-
     min-height:170px;
+
+    box-shadow:0 3px 8px rgba(0,0,0,0.2);
 
     display:flex;
     flex-direction:column;
     justify-content:center;
 }
 
-.curved h2{
+.card h2{
     text-align:center;
     margin-bottom:15px;
 }
 
-.curved p{
+.card p{
     text-align:center;
     line-height:1.6;
 }
@@ -161,15 +167,20 @@ html, body{
     grid-area:policies;
 }
 
-.image-box{
+.image-card{
     grid-area:image;
 }
 
-.image-box img{
+/* ================= IMAGE ================= */
+
+.image-card img{
     width:100%;
     height:100%;
-    border-radius:25px;
+
     object-fit:cover;
+
+    border-radius:20px;
+
     display:block;
 }
 
