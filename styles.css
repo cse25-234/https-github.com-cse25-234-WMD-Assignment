@@ -99,14 +99,14 @@ html, body{
     color:black;
 }
 
-/* ================= CONTENT GRID ================= */
+/* ================= CONTENT ================= */
 
 #content{
     width:95%;
     margin:20px auto;
 }
 
-/* MAIN GRID */
+/* ================= GRID ================= */
 
 .grid{
     display:grid;
@@ -118,19 +118,23 @@ html, body{
     "vision image"
     "policies image";
 
-    gap:20px;
+    gap:15px;
 }
 
-/* ================= BOXES ================= */
+/* ================= SMALLER BOXES ================= */
 
 .card{
     background:#d9e8ff;
 
     border-radius:20px;
 
-    padding:25px;
+    padding:15px;
 
-    min-height:170px;
+    min-height:120px;
+
+    width:90%;
+
+    margin:auto;
 
     box-shadow:0 3px 8px rgba(0,0,0,0.2);
 
@@ -141,12 +145,18 @@ html, body{
 
 .card h2{
     text-align:center;
-    margin-bottom:15px;
+
+    margin-bottom:10px;
+
+    font-size:22px;
 }
 
 .card p{
     text-align:center;
-    line-height:1.6;
+
+    line-height:1.4;
+
+    font-size:14px;
 }
 
 /* ================= GRID POSITIONS ================= */
