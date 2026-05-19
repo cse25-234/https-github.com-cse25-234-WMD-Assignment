@@ -274,6 +274,56 @@ html, body{
     background:#084298;
 }
 
+/* ================= INDEX CARDS ================= */
+
+.cards{
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+}
+
+.cards article{
+    width:260px;
+
+    background:rgba(255,255,255,0.9);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+
+    transition:0.3s;
+}
+
+.cards article:hover{
+    transform:translateY(-5px);
+}
+
+.cards h4{
+    font-size:1.4rem;
+
+    margin-bottom:15px;
+
+    color:black;
+}
+
+.cards p{
+    font-size:14px;
+
+    line-height:1.5;
+
+    color:#333;
+}
+
 
 /* ================= LIST ================= */
 
