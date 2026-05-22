@@ -507,3 +507,123 @@ button:hover{
     margin-right:10px;
     display:inline-block;
 }
+
+@media screen and (max-width: 768px){
+
+    html, body{
+        width:100%;
+        overflow-x:hidden;
+    }
+
+    /* HEADER */
+    #header{
+        flex-direction:column;
+        text-align:center;
+        padding:15px;
+    }
+
+    #logo img{
+        width:60px;
+        margin-bottom:10px;
+    }
+
+    /* MENU */
+    #menubar{
+        padding:10px;
+    }
+
+    #menu{
+        flex-direction:column;
+        gap:10px;
+        align-items:center;
+    }
+
+    /* BANNER */
+    #banner{
+        height:180px;
+        padding:20px;
+        text-align:center;
+    }
+
+    #banner h1{
+        font-size:32px;
+        line-height:1.2;
+    }
+
+    /* CONTENT */
+    #content{
+        width:95%;
+    }
+
+    /* ABOUT GRID */
+    .grid{
+        grid-template-columns:1fr;
+
+        grid-template-areas:
+        "mandate"
+        "mission"
+        "vision"
+        "policies"
+        "image";
+    }
+
+    .card{
+        width:100%;
+    }
+
+    /* APPLICATION CARDS */
+    .row,
+    .cards{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .application-card,
+    .cards article{
+        width:100%;
+        max-width:320px;
+    }
+
+    .application-card img{
+        height:200px;
+    }
+
+    /* TABLE */
+    table,
+    tr,
+    th,
+    td{
+        display:block;
+        width:100%;
+    }
+
+    th{
+        margin-bottom:20px;
+    }
+
+    /* FORM */
+    input{
+        width:100%;
+    }
+
+    .application-page{
+        width:95%;
+        padding:20px;
+    }
+
+    .application-page h2{
+        font-size:24px;
+    }
+
+    /* FOOTER */
+    #content_footer{
+        flex-direction:column;
+        text-align:center;
+        gap:25px;
+    }
+
+    #content_footer img{
+        margin:5px;
+    }
+}
