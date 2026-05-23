@@ -45,6 +45,10 @@ html, body{
 
 #logo img{
     width:80px;
+
+    /* fallback background */
+    background:#d9e8ff;
+    border-radius:10px;
 }
 
 /* ================= MENU ================= */
@@ -187,6 +191,13 @@ html, body{
 
 .image-card{
     grid-area:image;
+
+    /* fallback background */
+    background:#d9e8ff;
+
+    border-radius:20px;
+
+    overflow:hidden;
 }
 
 /* ================= IMAGE ================= */
@@ -200,6 +211,9 @@ html, body{
     border-radius:20px;
 
     display:block;
+
+    /* fallback background */
+    background:#d9e8ff;
 }
 
 /* ================= APPLICATION CARDS ================= */
@@ -243,6 +257,9 @@ html, body{
     border-radius:12px;
 
     margin-bottom:15px;
+
+    /* fallback background */
+    background:#d9e8ff;
 }
 
 .application-card h3{
@@ -605,6 +622,11 @@ button:hover{
     width:40px;
     margin-right:10px;
     display:inline-block;
+
+    /* fallback background */
+    background:#d9e8ff;
+
+    border-radius:8px;
 }
 
 /* ================= MOBILE RESPONSIVE ================= */
