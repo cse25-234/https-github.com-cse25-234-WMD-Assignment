@@ -193,7 +193,7 @@ html, body{
     grid-area:image;
 
     /* fallback background */
-    background:#d9e8ff;
+    background:grey;
 
     border-radius:20px;
 
@@ -213,7 +213,7 @@ html, body{
     display:block;
 
     /* fallback background */
-    background:#d9e8ff;
+    background:grey;
 }
 
 /* ================= APPLICATION CARDS ================= */
@@ -259,7 +259,7 @@ html, body{
     margin-bottom:15px;
 
     /* fallback background */
-    background:#d9e8ff;
+    background:grey;
 }
 
 .application-card h3{
