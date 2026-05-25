@@ -8,10 +8,10 @@
     <meta charset="UTF-8">
 
     <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
+        content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet">
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -19,41 +19,43 @@
 
 <body>
 
-<section id="main">
+    <section id="main">
 
-    <section id="header">
+        <section id="header">
 
-        <section id="logo">
+            <section id="logo">
 
-            <section id="logo_text">
+                <section id="logo_text">
 
-                <section id="menubar">
+                    <section id="menubar">
 
-                    <ul id="menu">
+                        <ul id="menu">
 
-                        <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
 
-                        <li><a href="about.html">About</a></li>
+                            <li><a href="about.html">About</a></li>
 
-                        <li>
-                            <a href="funding.html">
-                                Funding Information
-                            </a>
-                        </li>
+                            <li>
+                                <a href="funding.html">
+                                    Funding Information
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="feedback.html">
-                                feedback
-                            </a>
-                        </li>
+                            <li>
+                                <a href="feedback.html">
+                                    Feedback
+                                </a>
+                            </li>
 
-                        <li class="selected">
-                            <a href="applications.html">
-                                Applications
-                            </a>
-                        </li>
+                            <li class="selected">
+                                <a href="applications.html">
+                                    Applications
+                                </a>
+                            </li>
 
-                    </ul>
+                        </ul>
+
+                    </section>
 
                 </section>
 
@@ -61,66 +63,85 @@
 
         </section>
 
+        <section id="banner">
+
+            <h1>TOP ACHIEVERS</h1>
+
+        </section>
+
+        <section class="application-page">
+
+            <h2>Apply for Top Achievers</h2>
+
+            <p>
+                Complete the form below for international
+                sponsorship consideration.
+            </p>
+
+            <!-- FORM -->
+            <form class="application-form"
+                onsubmit="return validateTopAchieversForm()">
+
+                <section>
+                    <label>Full Name</label>
+
+                    <input type="text"
+                        id="topName"
+                        required>
+                </section>
+
+                <section>
+                    <label>Email Address</label>
+
+                    <input type="email"
+                        id="topEmail"
+                        required>
+                </section>
+
+                <section>
+                    <label>BGCSE/IGCSE Results</label>
+
+                    <input type="text"
+                        id="results"
+                        placeholder="Example: 6A*s">
+                </section>
+
+                <section>
+                    <label>A-Level/AS Results</label>
+
+                    <input type="text"
+                        id="alevel">
+                </section>
+
+                <section>
+                    <label>University Applied To</label>
+
+                    <input type="text"
+                        id="university">
+                </section>
+
+                <section>
+                    <label>Country of Study</label>
+
+                    <input type="text"
+                        id="country">
+                </section>
+
+                <button type="submit">
+
+                    Submit Application
+
+                </button>
+
+            </form>
+
+        </section>
+
     </section>
 
-    <section id="banner">
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
-        <h1>TOP ACHIEVERS</h1>
-
-    </section>
-
-    <section class="application-page">
-
-        <h2>Apply for Top Achievers</h2>
-
-        <p>
-            Complete the form below for international
-            sponsorship consideration.
-        </p>
-
-        <form class="application-form">
-
-            <section>
-                <label>Full Name</label>
-                <input type="text" required>
-            </section>
-
-            <section>
-                <label>Email Address</label>
-                <input type="email" required>
-            </section>
-
-            <section>
-                <label>BGCSE/IGCSE Results</label>
-                <input type="text" placeholder="Example: 6A*s">
-            </section>
-
-            <section>
-                <label>A-Level/AS Results</label>
-                <input type="text">
-            </section>
-
-            <section>
-                <label>University Applied To</label>
-                <input type="text">
-            </section>
-
-            <section>
-                <label>Country of Study</label>
-                <input type="text">
-            </section>
-
-            <button type="submit">
-
-                Submit Application
-
-            </button>
-
-        </form>
-
-    </section>
-
-</section>
-<script src="script.js"></script>
 </body>
+
 </html>
